@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css.map?_ijt=89gt2493in1661iujrmfkhn45r">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        .nav-1 {
+            display: block;
+            min-height: 50px;
+            background: green;
+            padding: 10px 10px 6px 10px;
+        }
+        .nav-1-item {
+            display: inline-block;
+            padding: 4px;
+            background: yellow;
+            text-align: center;
+            width: 300px;
+            margin: 0 4px 4px 0;
+        }
+        [class^='col'] {
+            background: yellowgreen;
+            border: black 1px solid;
+            border-radius: 4px;
+        }
+        .nav-2 {
+            display: flex;
+            align-items: center;
+            min-height: 50px;
+            padding: 10px 10px 6px 10px;
+            background: yellow;
+            flex-wrap: wrap;
+        }
+        .nav-2-item {
+            background: #2aabd2;
+            padding: 4px;
+            margin: 0 4px 4px 0;
+            text-align: center;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-1">
+        <div class="nav-1-item">Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1</div>
+        <div class="nav-1-item">Item 2</div>
+        <div class="nav-1-item">Item 3</div>
+        <div class="nav-1-item">Item 4</div>
+        <div class="nav-1-item">Item 5</div>
+    </nav>
+    <hr>
+    <h3>display: flex;</h3>
+    <div class="nav-2">
+        <div class="nav-2-item">Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1</div>
+        <div class="nav-2-item">Item 2</div>
+        <div class="nav-2-item">Item 3</div>
+        <div class="nav-2-item">Item 4</div>
+        <div class="nav-2-item">Item 5</div>
+    </div>
+
+    <div class="container" style="margin-top: 10px">
+        <div class="row">
+            <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                    <div class="col-xs-8 col-sm-6">
+                        Level 2: .col-xs-8 .col-sm-6
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                        Level 2: .col-xs-4 .col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script rel="script" src="assets/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</html>
